@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.triangle {
+  height: 0;
+  width: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid red;
+}
+
+.triangle:hover {
+  border-right: 100px solid yellow;
+}
+
+.outer {
+  width: 499px;
+  height: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  aligh-items: center;
+  background-color: red;
+}
+
+.inner {
+  background-color: brown;
+  width: 0px;
+  height: 100px;
+}
+
+.boxOuter {
+  background-color: #d9ff7f;
+  /* color: green; */
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 10px;
+}
+
+.boxInner {
+  background-color: #782aa5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  /*  50% of the Outer Box */
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*  verschiebe die Box 50% der eigenen Größe */
+}
+
+.button1, .button2 {
+  background-color: blue;
+}
+/*# sourceMappingURL=style2.css.map */

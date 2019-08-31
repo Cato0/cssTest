@@ -1,0 +1,13 @@
+$primaryBtn : red;
+
+.triangle {
+    height: 0;
+    width: 0;
+
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid $primaryBtn;
+    &:hover{
+        border-right: 100px solid yellow;
+    }
+}

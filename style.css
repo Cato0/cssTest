@@ -1,0 +1,41 @@
+.outer {
+    background-color: aquamarine;
+    width: 500px;
+    height: 100;
+}
+
+.inner {
+    background-color: brown;
+    width: 0px;
+    height: 100px;
+}
+
+.boxOuter {
+    background-color: rgb(217, 255, 127);
+    /* color: green; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+}
+
+.boxInner {
+    background-color: rgb(120, 42, 165);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 50%; /*  50% of the Outer Box */
+    top: 50%;
+    transform:translate(-50%, -50%);   /*  verschiebe die Box 50% der eigenen Größe */
+}
+
+
+.triangle {
+    height: 0;
+    width: 0;
+
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid yellow;
+}

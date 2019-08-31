@@ -1,0 +1,51 @@
+@import '_triangle';
+
+$primaryBtn : red;
+
+@mixin flexCenter {
+    display:flex;
+    justify-content: center;
+    aligh-items: center;
+    background-color:$primaryBtn;
+}
+
+.outer {
+    // background-color: aquamarine;
+    width: 499px;
+    height: 100;
+    @include flexCenter();
+}
+
+.inner {
+    background-color: brown;
+    width: 0px;
+    height: 100px;
+}
+
+.boxOuter {
+    background-color: rgb(217, 255, 127);
+    /* color: green; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+}
+
+.boxInner {
+    background-color: rgb(120, 42, 165);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 50%; /*  50% of the Outer Box */
+    top: 50%;
+    transform:translate(-50%, -50%);   /*  verschiebe die Box 50% der eigenen Größe */
+}
+
+.button1 {
+    background-color: blue;
+}
+
+.button2 {
+    @extend .button1;
+}
